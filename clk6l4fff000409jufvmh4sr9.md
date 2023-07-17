@@ -10,6 +10,23 @@ tags: aws, devops, vpc, 90daysofdevops, trainwithshubham
 
 ---
 
+### What is VPN
+
+Before we proceed with VPC, I want to give you an idea about VPN as well, this is used in organizations to have a secure connection between your local network and servers.
+
+![Comparison: AWS Direct Connect vs. VPN | StormIT](https://d1tcczg8b21j1t.cloudfront.net/strapi-assets/29_AWS_Direct_Connect_vs_VPN_5_74a8cb426a.png align="left")
+
+* It enables secure communication and data transfer between your local network and resources in the remote network, such as an AWS VPC.
+    
+* VPN is commonly used to connect on-premises networks to a VPC, allowing access to AWS resources securely.
+    
+* AWS VPC provides the networking infrastructure within the AWS cloud, allowing you to create isolated environments and manage resources.
+    
+* VPN can be used to establish a secure connection between your local network and the VPC, extending your network's reach into the AWS environment.
+    
+
+WS VPC is the virtual network infrastructure within AWS, while VPN is a technology that facilitates secure connectivity between your local network and resources in the VPC. VPN extends the reach of your local network to securely access AWS resources within the VPC.
+
 ### What is AWS VPC?
 
 AWS VPC (Virtual Private Cloud) is a virtual network that enables you to create isolated, secure environments within the AWS cloud. It allows you to define your network configuration, including IP address range, subnets, routing, and security settings, providing control and isolation for your AWS resources.
