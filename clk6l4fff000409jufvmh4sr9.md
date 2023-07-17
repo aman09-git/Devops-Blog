@@ -10,7 +10,7 @@ tags: aws, devops, vpc, 90daysofdevops, trainwithshubham
 
 ---
 
-What is AWS VPC?
+### What is AWS VPC?
 
 AWS VPC (Virtual Private Cloud) is a virtual network that enables you to create isolated, secure environments within the AWS cloud. It allows you to define your network configuration, including IP address range, subnets, routing, and security settings, providing control and isolation for your AWS resources.
 
@@ -63,7 +63,6 @@ Now Let's explore every term that we have used in VPC:
 
 ### Subnets:
 
-  
 Subnets in AWS are segmented IP address ranges within a VPC that help organize resources and control network traffic by separating them into isolated network segments.
 
 * A subnet is a smaller portion of the network that typically includes all the machines in a certain area.
@@ -95,7 +94,6 @@ An Internet Gateway in AWS is a virtual gateway that allows traffic to flow betw
 
 ### NAT Gateway:
 
-  
 NAT (Network Address Translation) in AWS allows private instances within a VPC to communicate with the internet by translating their private IP addresses to public IP addresses. It provides outbound internet access for instances in private subnets.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689353131063/b2f32032-3ecf-4290-9cde-895344a58020.png align="center")
@@ -149,7 +147,7 @@ There are four AWS load balancer types supported:
 * AWS Gateway Load Balancer (GLB)
     
 
-###  Auto Scaling group:
+### Auto Scaling group:
 
 **AWS Auto-Scaling** is a mechanism that automatically permits you to increase or decrease your resources to meet demand based on custom-defined metrics and thresholds. Through Auto-scaling, it’s simple to set up application scaling for multiple resources across multiple services in minutes.
 
