@@ -203,7 +203,7 @@ In this comprehensive blog, I have covered everything that you need to know abou
 
 Also, you can check out this video to have more clarity on VPC and its topics.
 
-%[https://youtu.be/TtlKFgfN3PU] 
+%[https://youtu.be/P8g7Z4NYk3Q] 
 
 ***Hope this was helpful. Thank you for your time !!***
 
