@@ -247,6 +247,10 @@ Dedicated Hosts:
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689177956797/3a1d5515-e405-4e97-b9b2-17bd437b383d.png align="center")
     
+    Also, Explained the same in this short video about the creation of EC2 instances:
+    
+    %[https://youtu.be/qeVEPC6w0U4] 
+    
     ***Hope this was helpful. Thank you for your time !!***
     
     ***Stay Connected, many more to come !!***
