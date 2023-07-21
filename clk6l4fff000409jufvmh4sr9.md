@@ -201,6 +201,10 @@ The below diagram will help you to understand the difference b/w SG and NACL:
 
 In this comprehensive blog, I have covered everything that you need to know about VPC, will cover the practical implementation in our next blog.
 
+Simple AWS VPC Creation:
+
+%[https://youtu.be/GHT-7tGT77s] 
+
 Also, you can check out this video to have more clarity on VPC and its topics.
 
 %[https://youtu.be/P8g7Z4NYk3Q] 
