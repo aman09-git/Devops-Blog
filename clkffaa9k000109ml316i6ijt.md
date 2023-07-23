@@ -14,7 +14,7 @@ Let's understand this with city names, normally we give names of the cities on t
 
 GPS converts that city's location into coordinates and then helps us to reach the location, In the same way, Route 53 is a scalable and highly available Domain Name System (DNS) that converts IPs to a human-readable format.
 
-What is Route 53?
+### What is Route 53?
 
 Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web service provided by Amazon Web Services (AWS). DNS is a fundamental component of the internet that translates human-readable domain names (like [**www.example.com**](http://www.example.com)) into IP addresses (like 192.0.2.1) that computers can understand and use to locate resources on the internet.
 
@@ -61,6 +61,8 @@ With the increasing adoption of microservices and containerized architectures, *
 
 To know more deep about DNR Resolver, check out my blog. This will help you to understand it in a better way, Also you can check out the below picture too:
 
+### Blog Link for DNS in detail
+
 %[https://aman09.hashnode.dev/dns-domain-name-system] 
 
 ![How Route 53 Routes Traffic](https://jayendrapatil.com/wp-content/uploads/2022/07/how-route-53-routes-traffic.png align="left")
@@ -74,5 +76,7 @@ Amazon Route 53 is a reliable and scalable DNS web service offered by AWS. It si
 ***Stay Connected, many more to come !!***
 
 **Also, please check out my youtube channel, more contents to be delivered here.**
+
+### Youtube Link
 
 %[https://www.youtube.com/@AmanSrivastava1909]
