@@ -183,5 +183,11 @@ kubectl get pods
 
 ```plaintext
 kubectl get pods -o wide: To check on which node pods are placed 
-kubectl run —help : This will help you in many ways 
+kubectl run —help : This will help you in many ways
 ```
+
+***Hope this was helpful. Thank you for your time !!***
+
+***Stay Connected, many more to come !!***
+
+You can connect with me : [https://www.linkedin.com/in/aman-srivastava-dev/](https://www.linkedin.com/in/aman-srivastava-dev/)
