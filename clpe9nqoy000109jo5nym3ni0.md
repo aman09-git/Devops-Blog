@@ -41,7 +41,7 @@ Once we are connected install the AWS CLI with the below command.
 sudo yum install aws-cli   OR 
 sudo yum install aws-cli -y 
 
-aws --version - To check the version of CLI 
+aws --version - To check the version of CLI
 ```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1699702488516/be092e35-105f-4c81-87a1-dabf7152c3a3.png align="center")
@@ -49,7 +49,7 @@ aws --version - To check the version of CLI
 Now we have to configure the AWS credentials and default configuration with the AWS CLI. To do this we need to run the below command and give the below information when prompted in CLI.
 
 ```plaintext
-aws configure 
+aws configure
 ```
 
 1. **AWS Access Key ID:** This is your AWS access key, which is associated with an AWS IAM user. It is used to authenticate your CLI requests to AWS services.
@@ -112,7 +112,6 @@ aws lambda list-functions
 # list IAM Users
 echo "List of iam users"
 aws iam list-users
-
 ```
 
 * It is a good convention to always provide your details so that it will make it easier for other developers to contribute if they want to ie, metadata.
@@ -138,6 +137,21 @@ Run the below command :
 So, the script that I have created is getting 2 EC2 instances, 2 users one S3 bucket and there are no Lamda functions running.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1699704151340/294f8ee8-71f2-45a5-ad03-310b592d8b09.jpeg align="center")
+
+### Schedule it with crontab:
+
+Here's what each field in the cron schedule means:
+
+* `0`: Minute (0-59)
+    
+* `3`: Hour (0-23)
+    
+* **\`\`**: Every day of the month
+    
+* **\`\`**: Every month
+    
+* **\`\`**: Every day of the week
+    
 
 Also with the below command, we can get the output of the script in a text format and get this saved in the file.
 
