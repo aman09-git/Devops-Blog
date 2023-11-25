@@ -1,6 +1,7 @@
 ---
 title: "AWS Resource Tracker Project using Shell for Devops"
 seoTitle: "Shell Scripting"
+seoDescription: "Shell Scripting for Devops"
 datePublished: Sat Nov 25 2023 16:29:15 GMT+0000 (Coordinated Universal Time)
 cuid: clpe9nqoy000109jo5nym3ni0
 slug: aws-resource-tracker-project-using-shell-for-devops
