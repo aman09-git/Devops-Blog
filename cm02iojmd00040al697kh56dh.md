@@ -4,7 +4,7 @@ seoTitle: "Amazon Route 53"
 seoDescription: "Streamline web traffic with Amazon Route 53!"
 datePublished: Tue Aug 20 2024 14:25:20 GMT+0000 (Coordinated Universal Time)
 cuid: cm02iojmd00040al697kh56dh
-slug: streamline-web-traffic-with-amazon-route-53
+slug: aws-route53
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1724163568647/17588ec5-cdf0-487b-a029-789d9ac44b6d.png
 tags: cloud, aws, devops, route53, 90daysofdevops
 
