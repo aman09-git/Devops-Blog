@@ -14,9 +14,13 @@ tags: cloud, aws, devops, route53, 90daysofdevops
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1724161775158/248aec43-cb63-40d7-9880-949ea4794eb5.png align="center")
 
+### 𝗔𝗺𝗮𝘇𝗼𝗻 𝗥𝗼𝘂𝘁𝗲 𝟱𝟯
+
 𝗔𝗺𝗮𝘇𝗼𝗻 𝗥𝗼𝘂𝘁𝗲 𝟱𝟯 is a highly reliable DNS service that lets you manage DNS records directly, giving you control over how domain names are resolved to IP addresses. Being authoritative means you have the power to update and change DNS records as needed, which is crucial for directing traffic to the correct resources.
 
 With Amazon Route 53, you can handle domain registration and management, set up DNS records to associate domain names with IP addresses, and distribute traffic across various resources to ensure high availability and scalability. It also enables health checks to monitor the status of your resources. Route 53 offers sophisticated routing options to enhance your application's performance and resilience. It efficiently directs user requests to AWS infrastructure, including Amazon EC2 instances, Elastic Load Balancers, or Amazon S3 buckets, and can also route traffic to resources hosted outside of AWS.
+
+### Ho𝘀𝘁𝗲𝗱 Z𝗼𝗻𝗲
 
 A 𝗵𝗼𝘀𝘁𝗲𝗱 𝘇𝗼𝗻𝗲 is essentially a container that organizes and manages DNS records, dictating how traffic is routed for a specific domain and its subdomains. Think of it as the central hub where the DNS settings for your domain are stored and managed. Within this hub, you'll find various DNS records—like A records, AAAA records, CNAME records, and others—that map domain names to IP addresses and control where incoming traffic is directed.
 
@@ -27,6 +31,8 @@ Amazon Route 53 offers two types of hosted zones: public and private.
 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗛𝗼𝘀𝘁𝗲𝗱 𝗭𝗼𝗻𝗲𝘀 are designed for routing traffic within a private network, such as one or more VPCs (Virtual Private Clouds). Unlike public hosted zones, private hosted zones are not accessible from the internet and are intended for internal use within an organization. These zones allow you to create custom domain names for internal resources like applications, services, or databases and map them to private IP addresses. This setup lets you access internal resources using familiar domain names without exposing them to the public internet. Private hosted zones are tied to specific VPCs, enabling DNS resolution to occur within the isolated environment of the VPC. This setup offers benefits like enhanced security, lower latency, and streamlined network management.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1724161461929/33763ef4-48fb-47e9-94aa-e3cfb5760b5f.png align="center")
+
+### 𝗥𝗼𝘂𝘁𝗲 𝟱𝟯 𝗿𝗲𝗰𝗼𝗿𝗱𝘀
 
 𝗥𝗼𝘂𝘁𝗲 𝟱𝟯 𝗿𝗲𝗰𝗼𝗿𝗱𝘀 are the individual entries that define how to route traffic for your domain. Common types include:
 
@@ -39,11 +45,17 @@ A Record: Maps a domain to an IPv4 address. AAAA Record: Maps a domain to an IPv
 * Low TTL: Ensures changes are quickly reflected across the internet, but results in higher DNS query costs due to frequent lookups.
     
 
+### CNAME & Alias
+
 Both 𝗖𝗡𝗔𝗠𝗘 and 𝗔𝗹𝗶𝗮𝘀 records map one domain to another, but they serve distinct purposes:
 
-CNAME (Canonical Name): Suitable for non-root domains (like [`app.mydomain.com`](http://app.mydomain.com) pointing to [`blabla.anything.com`](http://blabla.anything.com)). It's typically used to direct traffic between subdomains. Alias Record: Can be used for both root and non-root domains (e.g., [`mydomain.com`](http://mydomain.com) or [`www.mydomain.com`](http://www.mydomain.com)). It’s a Route 53 feature that allows pointing to AWS resources like S3 buckets or CloudFront distributions.
+CNAME (Canonical Name): Suitable for non-root domains (like [`app.mydomain.com`](http://app.mydomain.com) pointing to [`blabla.anything.com`](http://blabla.anything.com)). It's typically used to direct traffic between subdomains.
+
+Alias Record: Can be used for both root and non-root domains (e.g., [`mydomain.com`](http://mydomain.com) or [`www.mydomain.com`](http://www.mydomain.com)). It’s a Route 53 feature that allows pointing to AWS resources like S3 buckets or CloudFront distributions.
 
 𝗔𝗹𝗶𝗮𝘀 𝗿𝗲𝗰𝗼𝗿𝗱𝘀 in Route 53 are designed to route traffic directly to AWS resources, such as S3 buckets, CloudFront distributions, or Elastic Load Balancers. This feature is especially useful when you want to manage traffic within AWS without needing to deal with IP addresses or external DNS management.
+
+### R𝗼𝘂𝘁𝗶𝗻𝗴 P𝗼𝗹𝗶𝗰𝗶𝗲𝘀
 
 R𝗼𝘂𝘁𝗶𝗻𝗴 P𝗼𝗹𝗶𝗰𝗶𝗲𝘀: Amazon Route 53 offers multiple routing policies to control traffic flow:
 
@@ -76,13 +88,19 @@ R𝗼𝘂𝘁𝗶𝗻𝗴 P𝗼𝗹𝗶𝗰𝗶𝗲𝘀: Amazon Route 53 offers 
     Example: If you want to provide multiple IP addresses for your website, Multi-value Answer Routing can return several IPs to the user's DNS resolver, which can then choose one, helping with client-side load balancing.
     
 
+### 𝗡𝗮𝗺𝗲 𝗦𝗲𝗿𝘃𝗲𝗿𝘀 (𝗡𝗦)
+
 𝗡𝗮𝗺𝗲 𝗦𝗲𝗿𝘃𝗲𝗿𝘀 (𝗡𝗦) are crucial components that convert domain names into IP addresses, guiding web traffic to the appropriate destination. In AWS Route 53, when you create a hosted zone, it automatically assigns a set of NS records. These records identify the name servers that will handle DNS queries for your domain.
 
 When you register or manage a domain using Route 53, the NS records instruct the global DNS system on where to find your domain’s DNS configurations. To ensure your domain is accessible, these NS records must point to the correct name servers either those provided by Route 53 or ones you've specified at your domain registrar.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1724162002431/9cd0601b-f33e-4903-9a15-ecb4bdd699b0.png align="center")
 
+### 𝟯𝗿𝗱 𝗣𝗮𝗿𝘁𝘆 𝗗𝗼𝗺𝗮𝗶𝗻𝘀 & 𝗥𝗼𝘂𝘁𝗲 𝟱𝟯
+
 𝟯𝗿𝗱 𝗣𝗮𝗿𝘁𝘆 𝗗𝗼𝗺𝗮𝗶𝗻𝘀 & 𝗥𝗼𝘂𝘁𝗲 𝟱𝟯: You can manage DNS with Route 53 even if your domain is registered with another provider. By updating your domain’s name servers to Route 53, you can take advantage of its powerful DNS management features regardless of where your domain is registered.
+
+### 𝗥𝗼𝘂𝘁𝗲 𝟱𝟯 - 𝗖𝗹𝗲𝗮𝗻𝘂𝗽
 
 𝗥𝗼𝘂𝘁𝗲 𝟱𝟯 - 𝗖𝗹𝗲𝗮𝗻𝘂𝗽: Regularly reviewing and cleaning up DNS records in Route 53 helps maintain an efficient DNS setup. Removing outdated or unused records not only saves costs but also ensures your DNS configuration is accurate and streamlined. The Route 53 console is your go-to tool for identifying and cleaning up unnecessary records.
 
