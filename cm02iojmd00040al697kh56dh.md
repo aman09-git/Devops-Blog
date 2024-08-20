@@ -1,6 +1,6 @@
 ---
 title: "Streamline web traffic with Amazon Route 53!"
-seoTitle: "Streamline web traffic with Amazon Route 53!"
+seoTitle: "Amazon Route 53"
 seoDescription: "Streamline web traffic with Amazon Route 53!"
 datePublished: Tue Aug 20 2024 14:25:20 GMT+0000 (Coordinated Universal Time)
 cuid: cm02iojmd00040al697kh56dh
