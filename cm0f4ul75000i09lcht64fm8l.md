@@ -92,19 +92,6 @@ With **CloudFront Geo Restrictions**, you can control which countries can access
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1724926518830/d883bbde-1322-412c-a268-fd5a2f402c68.jpeg align="center")
 
-### **Key differences based of AWS services:**
-
-|  | **  
-CloudFront** | **Global Accelerator** |
-| --- | --- | --- |
-| Traffic | Only HTTP and HTTPS | Both HTTP and Non-HTTP |
-| Edge Caching | Yes | No |
-| Supports AWS Shield | Yes | Yes |
-| Supports AWS WAF | Yes | Yes |
-| Global Static IPs | No | Yes |
-| Supports Edge Functions | Yes | No |
-| Pricing | Based on the data transferred | Base price along with data transferred |
-
 ***Hope this was helpful. Thank you for your time !!***
 
 ***Stay Connected, many more to come !!***
